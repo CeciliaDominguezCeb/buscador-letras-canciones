@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca la letra de tu canción</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="contenido" id="contenido">
+        <h1>Buscador de canciones</h1>
+        <div class="contenedor" id="contenedor">
+            <div class="busqueda" id="busqueda">
+                <h2>Búsqueda</h2>
+                <p>Busca por artista y nombre:</p>
+                <p><span> * </span>Obligatorio</p>
+                <form action="#" id="formulario-buscar">
+                    <div class="input">
+                        <label for="artista">Artista: <span>*</span></label>
+                        <input type="text" id="artista" placeholder="Artista">
+                    </div>
+                    <div class="input">
+                        <label for="cancion">Canción: <span>*</span></label>
+                        <input type="text" id="cancion" placeholder="Nombre Canción">
+                    </div>
+                    <div class="input enviar">
+                        <input type="submit" value="Buscar">
+                    </div>
+                </form>
+            </div>
+            <div class="letra-resultado">
+                <h2></h2>
+                <div id="resultado"></div>
+            </div>
+            <div id="mensajes"></div>
+        </div>
+    </main>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
