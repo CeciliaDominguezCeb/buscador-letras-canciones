@@ -20,7 +20,8 @@ h2 {
     text-align: center;
 }
 .contenido {
-    background-color: white;
+    background-color:#fff;
+    
     max-width: 1100px;
     margin:  0 auto;
     height: 100%;
