@@ -9,7 +9,7 @@ class API {
     resultAPI() {
         const url = `https://api.lyrics.ovh/v1/${this.artist}/${this.song}`
 
-        Spinner();
+
 
         fetch(url)
             .then(response => response.json())
@@ -31,22 +31,7 @@ class API {
             })
     }
 }
-function Spinner() {
-    const spinnerContainer = document.createElement('div');
-    spinnerContainer.classList.add('sk-fading-circle');
-    spinnerContainer.innerHTML = `
-    
-        <div class="sk-chase-dot"></div>
-        <div class="sk-chase-dot"></div>
-        <div class="sk-chase-dot"></div>
-        <div class="sk-chase-dot"></div>
-        <div class="sk-chase-dot"></div>
-        <div class="sk-chase-dot"></div>
-    
-    
-    `;
-    UI.lyricsResult.appendChild(spinnerContainer);
-}
+
 
 export default API;
 
