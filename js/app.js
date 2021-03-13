@@ -27,3 +27,5 @@ function songSearch(e) {
     const searchLyrics = new API(artist, song);
     searchLyrics.resultAPI();
 }
+
+
